@@ -7,7 +7,20 @@ const el = document.getElementById('root');
 const root = ReactDOM.createRoot(el);
 
 function App() {
-    return <h1> Hi There! </h1>;
+    return (
+        <div>
+            <h1> Hi There! </h1>
+            <input maxLength={5}
+                spellCheck 
+                placeholder="Enter text here"
+                style={{
+                    border: '3px solid red'
+                }}
+                autoFocus
+            >
+            </input>
+        </div>
+    );
 }
 
 root.render(<App />);
